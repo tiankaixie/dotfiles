@@ -13,6 +13,4 @@ end
 -- lsp config
 
 local lsp = require "lspconfig"
-lsp.pyright.setup { on_attach = on_attach }
-lsp.tsserver.setup { on_attach = on_attach }
 

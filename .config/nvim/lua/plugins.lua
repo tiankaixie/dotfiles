@@ -23,7 +23,9 @@ return require('packer').startup(function(use)
     }
   
   use 'neovim/nvim-lspconfig'
+  use 'williamboman/nvim-lsp-installer'
   use 'hrsh7th/nvim-compe'
+
   use {'projekt0n/github-nvim-theme',
        config = function() require('github-theme').setup({
 		theme_style = "dark_default",

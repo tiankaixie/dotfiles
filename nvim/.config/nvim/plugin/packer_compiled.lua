@@ -74,16 +74,35 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["coq.artifacts"] = {
+    loaded = true,
+    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/coq.artifacts",
+    url = "https://github.com/ms-jpq/coq.artifacts"
+  },
+  ["coq.thirdparty"] = {
+    loaded = true,
+    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/coq.thirdparty",
+    url = "https://github.com/ms-jpq/coq.thirdparty"
+  },
+  coq_nvim = {
+    config = { "vim.cmd[[COQnow]]" },
+    loaded = false,
+    needs_bufread = true,
+    only_cond = false,
+    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/opt/coq_nvim",
+    url = "https://github.com/ms-jpq/coq_nvim"
+  },
   ["github-nvim-theme"] = {
-    config = { "\27LJ\2\n¨\1\0\1\4\0\n\0\f5\1\5\0005\2\1\0009\3\0\0=\3\2\0029\3\3\0=\3\4\2=\2\6\0015\2\a\0=\2\b\0014\2\0\0=\2\t\1L\1\2\0\fTSField\19DiagnosticHint\1\0\1\tlink\30LspDiagnosticsDefaultHint\fhtmlTag\1\0\0\asp\thint\afg\1\0\2\abg\f#282c34\nstyle\14underline\bredâ\1\1\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0023\3\b\0=\3\t\2B\0\2\1K\0\1\0\14overrides\0\vcolors\1\0\2\nerror\f#ff0000\thint\vorange\rsidebars\1\5\0\0\aqf\15vista_kind\rterminal\vpacker\1\0\2\16theme_style\17dark_default\19function_style\vitalic\nsetup\17github-theme\frequire\0" },
+    config = { "\27LJ\2\nÏ\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\vcolors\1\0\2\nerror\f#ff0000\thint\vorange\rsidebars\1\5\0\0\aqf\15vista_kind\rterminal\vpacker\1\0\2\16theme_style\17dark_default\19function_style\vitalic\nsetup\17github-theme\frequire\0" },
     loaded = true,
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
     url = "https://github.com/projekt0n/github-nvim-theme"
   },
-  ["nvim-compe"] = {
+  ["null-ls.nvim"] = {
+    config = { "\27LJ\2\nï\2\0\0\b\0\17\00086\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\15\0004\3\a\0006\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\5\4>\4\1\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\6\0049\4\5\4>\4\2\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\a\0049\4\5\4>\4\3\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\6\0049\4\b\4>\4\4\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\t\0049\4\n\0045\6\f\0005\a\v\0=\a\r\6B\4\2\2>\4\5\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\14\4>\4\6\3=\3\16\2B\0\2\1K\0\1\0\fsources\1\0\0\nisort\15extra_args\1\0\0\1\2\0\0\v--fast\twith\nblack\vflake8\17code_actions\16diagnostics\reslint_d\15formatting\rbuiltins\nsetup\fnull-ls\frequire\0" },
     loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/nvim-compe",
-    url = "https://github.com/hrsh7th/nvim-compe"
+    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -101,6 +120,11 @@ _G.packer_plugins = {
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -110,18 +134,39 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
 -- Config for: github-nvim-theme
 time([[Config for github-nvim-theme]], true)
-try_loadstring("\27LJ\2\n¨\1\0\1\4\0\n\0\f5\1\5\0005\2\1\0009\3\0\0=\3\2\0029\3\3\0=\3\4\2=\2\6\0015\2\a\0=\2\b\0014\2\0\0=\2\t\1L\1\2\0\fTSField\19DiagnosticHint\1\0\1\tlink\30LspDiagnosticsDefaultHint\fhtmlTag\1\0\0\asp\thint\afg\1\0\2\abg\f#282c34\nstyle\14underline\bredâ\1\1\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0023\3\b\0=\3\t\2B\0\2\1K\0\1\0\14overrides\0\vcolors\1\0\2\nerror\f#ff0000\thint\vorange\rsidebars\1\5\0\0\aqf\15vista_kind\rterminal\vpacker\1\0\2\16theme_style\17dark_default\19function_style\vitalic\nsetup\17github-theme\frequire\0", "config", "github-nvim-theme")
+try_loadstring("\27LJ\2\nÏ\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\vcolors\1\0\2\nerror\f#ff0000\thint\vorange\rsidebars\1\5\0\0\aqf\15vista_kind\rterminal\vpacker\1\0\2\16theme_style\17dark_default\19function_style\vitalic\nsetup\17github-theme\frequire\0", "config", "github-nvim-theme")
 time([[Config for github-nvim-theme]], false)
+-- Config for: null-ls.nvim
+time([[Config for null-ls.nvim]], true)
+try_loadstring("\27LJ\2\nï\2\0\0\b\0\17\00086\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\15\0004\3\a\0006\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\5\4>\4\1\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\6\0049\4\5\4>\4\2\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\a\0049\4\5\4>\4\3\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\6\0049\4\b\4>\4\4\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\t\0049\4\n\0045\6\f\0005\a\v\0=\a\r\6B\4\2\2>\4\5\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\14\4>\4\6\3=\3\16\2B\0\2\1K\0\1\0\fsources\1\0\0\nisort\15extra_args\1\0\0\1\2\0\0\v--fast\twith\nblack\vflake8\17code_actions\16diagnostics\reslint_d\15formatting\rbuiltins\nsetup\fnull-ls\frequire\0", "config", "null-ls.nvim")
+time([[Config for null-ls.nvim]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Event lazy-loads
+time([[Defining lazy-load event autocommands]], true)
+vim.cmd [[au VimEnter * ++once lua require("packer.load")({'coq_nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
+time([[Defining lazy-load event autocommands]], false)
+vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

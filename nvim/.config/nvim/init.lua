@@ -1,5 +1,5 @@
 require('plugins')
 require('keymappings')
 require('settings')
--- require('cmp')
-
+require('lsp')
+vim.cmd("colorscheme dracula")

@@ -37,58 +37,7 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
 
--- Use an on_attach function to only map the following keys
--- after the language server attaches to the current buffer
-local on_attach = function(client, bufnr)
-  -- Enable completion triggered by <c-x><c-o>
-  vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
-  -- Mappings.
-  -- See `:help vim.lsp.*` for documentation on any of the below functions
-  local bufopts = { noremap = true, silent = true, buffer = bufnr }
-  vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
-  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
-  vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
-  vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
-  vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
-  vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, bufopts)
-  vim.keymap.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, bufopts)
-  vim.keymap.set('n', '<space>wl', function()
-    print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-  end, bufopts)
-  vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, bufopts)
-  vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
-  vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
-  vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
-  vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
-  require "coq".lsp_ensure_capabilities {}
-
-end
-
-
-require('lspconfig')['pyright'].setup {
-  on_attach = on_attach,
-}
-require('lspconfig')['tsserver'].setup {
-  on_attach = on_attach,
-}
-
-require('lspconfig')['sumneko_lua'].setup {
-  on_attach = on_attach,
-  settings = {
-    Lua = {
-      diagnostics = {
-        globals = { 'vim' }
-      }
-    }
-  }
-}
-
---require'nvim-treesitter.configs'.setup {
- -- highlight = {
- --   enable = true
- -- }
---}
 
 return packer.startup(function(use)
   use 'wbthomason/packer.nvim'
@@ -115,14 +64,16 @@ return packer.startup(function(use)
   }
   use { 'ms-jpq/coq.artifacts', branch = 'artifacts' }
   use { 'ms-jpq/coq.thirdparty', branch = '3p' }
-      use {
+  use {
         'nvim-treesitter/nvim-treesitter',
-        run = function() 
-            local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
-            ts_update()
-        end,
-    }
-
+        run = ':TSUpdate',
+        config = function() require('nvim-treesitter.configs').setup {
+                highlight = {
+                    enable = true
+                },
+            }
+        end
+    } 
   use {
     'jose-elias-alvarez/null-ls.nvim',
     config = function() require("null-ls").setup {
@@ -140,6 +91,54 @@ return packer.startup(function(use)
     requires = { "nvim-lua/plenary.nvim" },
   }
 
+  -- Using Packer:
+  use {'Mofiqul/dracula.nvim',
+    config = function() require("dracula").setup({
+      -- customize dracula color palette
+      colors = {
+        bg = "#282A36",
+        fg = "#F8F8F2",
+        selection = "#44475A",
+        comment = "#6272A4",
+        red = "#FF5555",
+        orange = "#FFB86C",
+        yellow = "#F1FA8C",
+        green = "#50fa7b",
+        purple = "#BD93F9",
+        cyan = "#8BE9FD",
+        pink = "#FF79C6",
+        bright_red = "#FF6E6E",
+        bright_green = "#69FF94",
+        bright_yellow = "#FFFFA5",
+        bright_blue = "#D6ACFF",
+        bright_magenta = "#FF92DF",
+        bright_cyan = "#A4FFFF",
+        bright_white = "#FFFFFF",
+        menu = "#21222C",
+        visual = "#3E4452",
+        gutter_fg = "#4B5263",
+        nontext = "#3B4048",
+      },
+      -- show the '~' characters after the end of buffers
+      -- show_end_of_buffer = true, -- default false
+      -- use transparent background
+      transparent_bg = true, -- default false
+      -- set custom lualine background color
+      -- lualine_bg_color = "#44475a", -- default nil
+      -- set italic comment
+      italic_comment = true, -- default false
+      -- overrides the default highlights see `:h synIDattr`
+      overrides = {
+        -- Examples
+        -- NonText = { fg = dracula.colors().white }, -- set NonText fg to white
+        NvimTreeIndentMarker = { link = "NonText" }, -- link to NonText highlight
+        -- Nothing = {} -- clear highlight of Nothing
+      },
+  })
+end
+}
+
+--[[
   use { 'projekt0n/github-nvim-theme',
     config = function() require('github-theme').setup({
         theme_style = "dark_default",
@@ -151,19 +150,20 @@ return packer.startup(function(use)
         colors = { hint = "orange", error = "#ff0000" },
 
         -- Overwrite the highlight groups
-        --overrides = function(c)
-        --  return {
-         --   htmlTag = { fg = c.red, bg = "#282c34", sp = c.hint, style = "underline" },
-         --   DiagnosticHint = { link = "LspDiagnosticsDefaultHint" },
+        overrides = function(c)
+          return {
+            htmlTag = { fg = c.red, bg = "#282c34", sp = c.hint, style = "underline" },
+            DiagnosticHint = { link = "LspDiagnosticsDefaultHint" },
             -- this will remove the highlight groups
-          --  TSField = {},
-         -- }
-        --end
+            TSField = {},
+          }
+        end
 
 
       })
     end
   }
+]]--
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

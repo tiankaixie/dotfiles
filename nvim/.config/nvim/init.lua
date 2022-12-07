@@ -3,6 +3,7 @@ require('keymappings')
 require('settings')
 require('lsp')
 require('treesitter')
+require('toggleterm')
 vim.cmd([[colorscheme dracula]])
 
 

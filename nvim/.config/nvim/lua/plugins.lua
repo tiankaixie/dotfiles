@@ -54,6 +54,10 @@ return packer.startup(function(use)
 
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+      require("toggleterm").setup()
+  end
+  }
 
 
   use {

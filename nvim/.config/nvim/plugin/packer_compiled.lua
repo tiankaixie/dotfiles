@@ -93,7 +93,7 @@ _G.packer_plugins = {
     url = "https://github.com/ms-jpq/coq_nvim"
   },
   ["dracula.nvim"] = {
-    config = { "\27LJ\2\n™\4\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\a\0005\4\6\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\14overrides\25NvimTreeIndentMarker\1\0\0\1\0\1\tlink\fNonText\vcolors\1\0\2\19italic_comment\2\19transparent_bg\2\1\0\22\16bright_cyan\f#A4FFFF\abg\f#282A36\17bright_white\f#FFFFFF\19bright_magenta\f#FF92DF\tmenu\f#21222C\16bright_blue\f#D6ACFF\vvisual\f#3E4452\18bright_yellow\f#FFFFA5\14gutter_fg\f#4B5263\17bright_green\f#69FF94\fnontext\f#3B4048\15bright_red\f#FF6E6E\tpink\f#FF79C6\tcyan\f#8BE9FD\vpurple\f#BD93F9\ngreen\f#50fa7b\vyellow\f#F1FA8C\vorange\f#FFB86C\bred\f#FF5555\fcomment\f#6272A4\14selection\f#44475A\afg\f#F8F8F2\nsetup\fdracula\frequire\0" },
+    config = { "\27LJ\2\n™\4\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\a\0005\4\6\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\14overrides\25NvimTreeIndentMarker\1\0\0\1\0\1\tlink\fNonText\vcolors\1\0\2\19italic_comment\2\19transparent_bg\2\1\0\22\16bright_cyan\f#A4FFFF\tpink\f#FF79C6\17bright_white\f#FFFFFF\tcyan\f#8BE9FD\tmenu\f#21222C\vpurple\f#BD93F9\vvisual\f#3E4452\ngreen\f#50fa7b\14gutter_fg\f#4B5263\vyellow\f#F1FA8C\fnontext\f#3B4048\vorange\f#FFB86C\bred\f#FF5555\fcomment\f#6272A4\14selection\f#44475A\afg\f#F8F8F2\abg\f#282A36\19bright_magenta\f#FF92DF\16bright_blue\f#D6ACFF\18bright_yellow\f#FFFFA5\17bright_green\f#69FF94\15bright_red\f#FF6E6E\nsetup\fdracula\frequire\0" },
     loaded = true,
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/dracula.nvim",
     url = "https://github.com/Mofiqul/dracula.nvim"
@@ -152,7 +152,6 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lua/popup.nvim"
   },
   ["toggleterm.nvim"] = {
-    config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0" },
     loaded = true,
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
@@ -160,26 +159,22 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: null-ls.nvim
-time([[Config for null-ls.nvim]], true)
-try_loadstring("\27LJ\2\nï\2\0\0\b\0\17\00086\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\15\0004\3\a\0006\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\5\4>\4\1\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\6\0049\4\5\4>\4\2\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\a\0049\4\5\4>\4\3\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\6\0049\4\b\4>\4\4\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\t\0049\4\n\0045\6\f\0005\a\v\0=\a\r\6B\4\2\2>\4\5\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\14\4>\4\6\3=\3\16\2B\0\2\1K\0\1\0\fsources\1\0\0\nisort\15extra_args\1\0\0\1\2\0\0\v--fast\twith\nblack\vflake8\17code_actions\16diagnostics\reslint_d\15formatting\rbuiltins\nsetup\fnull-ls\frequire\0", "config", "null-ls.nvim")
-time([[Config for null-ls.nvim]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
--- Config for: dracula.nvim
-time([[Config for dracula.nvim]], true)
-try_loadstring("\27LJ\2\n™\4\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\a\0005\4\6\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\14overrides\25NvimTreeIndentMarker\1\0\0\1\0\1\tlink\fNonText\vcolors\1\0\2\19italic_comment\2\19transparent_bg\2\1\0\22\16bright_cyan\f#A4FFFF\abg\f#282A36\17bright_white\f#FFFFFF\19bright_magenta\f#FF92DF\tmenu\f#21222C\16bright_blue\f#D6ACFF\vvisual\f#3E4452\18bright_yellow\f#FFFFA5\14gutter_fg\f#4B5263\17bright_green\f#69FF94\fnontext\f#3B4048\15bright_red\f#FF6E6E\tpink\f#FF79C6\tcyan\f#8BE9FD\vpurple\f#BD93F9\ngreen\f#50fa7b\vyellow\f#F1FA8C\vorange\f#FFB86C\bred\f#FF5555\fcomment\f#6272A4\14selection\f#44475A\afg\f#F8F8F2\nsetup\fdracula\frequire\0", "config", "dracula.nvim")
-time([[Config for dracula.nvim]], false)
--- Config for: toggleterm.nvim
-time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
-time([[Config for toggleterm.nvim]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 try_loadstring("\27LJ\2\ni\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\14highlight\1\0\0\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
 time([[Config for nvim-treesitter]], false)
+-- Config for: null-ls.nvim
+time([[Config for null-ls.nvim]], true)
+try_loadstring("\27LJ\2\nï\2\0\0\b\0\17\00086\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\15\0004\3\a\0006\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\5\4>\4\1\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\6\0049\4\5\4>\4\2\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\a\0049\4\5\4>\4\3\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\6\0049\4\b\4>\4\4\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\t\0049\4\n\0045\6\f\0005\a\v\0=\a\r\6B\4\2\2>\4\5\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\14\4>\4\6\3=\3\16\2B\0\2\1K\0\1\0\fsources\1\0\0\nisort\15extra_args\1\0\0\1\2\0\0\v--fast\twith\nblack\vflake8\17code_actions\16diagnostics\reslint_d\15formatting\rbuiltins\nsetup\fnull-ls\frequire\0", "config", "null-ls.nvim")
+time([[Config for null-ls.nvim]], false)
+-- Config for: dracula.nvim
+time([[Config for dracula.nvim]], true)
+try_loadstring("\27LJ\2\n™\4\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\a\0005\4\6\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\14overrides\25NvimTreeIndentMarker\1\0\0\1\0\1\tlink\fNonText\vcolors\1\0\2\19italic_comment\2\19transparent_bg\2\1\0\22\16bright_cyan\f#A4FFFF\tpink\f#FF79C6\17bright_white\f#FFFFFF\tcyan\f#8BE9FD\tmenu\f#21222C\vpurple\f#BD93F9\vvisual\f#3E4452\ngreen\f#50fa7b\14gutter_fg\f#4B5263\vyellow\f#F1FA8C\fnontext\f#3B4048\vorange\f#FFB86C\bred\f#FF5555\fcomment\f#6272A4\14selection\f#44475A\afg\f#F8F8F2\abg\f#282A36\19bright_magenta\f#FF92DF\16bright_blue\f#D6ACFF\18bright_yellow\f#FFFFA5\17bright_green\f#69FF94\15bright_red\f#FF6E6E\nsetup\fdracula\frequire\0", "config", "dracula.nvim")
+time([[Config for dracula.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads

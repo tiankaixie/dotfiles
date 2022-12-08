@@ -1,6 +1,6 @@
 local status_ok, toggleterm = pcall(require, "toggleterm")
 if not status_ok then
-  print("eafafeawefawe")
+  print("toggle term not working")
 	return
 end
 
@@ -8,7 +8,7 @@ print("LOOOOOOOOOOADD")
 
 toggleterm.setup({
 	size = 20,
-	open_mapping = [[<[-\>]],
+	open_mapping = [[<C-\>]],
 	hide_numbers = true,
 	shade_filetypes = {},
 	shade_terminals = true,

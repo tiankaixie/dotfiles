@@ -37,4 +37,4 @@ if vim.fn.exists("g:neovide") then
 end
 
 
-
+vim.cmd([[colorscheme dracula]])

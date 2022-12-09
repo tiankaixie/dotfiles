@@ -21,6 +21,7 @@ vim.opt.numberwidth = 4
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
 vim.opt.termguicolors = true
+vim.o.background = "dark" -- triggers dark colorscheme
 
 
 
@@ -38,3 +39,4 @@ end
 
 
 -- vim.cmd([[colorscheme dracula]])
+vim.cmd("colorscheme oxocarbon")

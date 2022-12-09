@@ -143,7 +143,7 @@ return packer.startup(function(use)
 end
 }
 ]]--
-
+--[[
   use { 'projekt0n/github-nvim-theme',
     config = function() require('github-theme').setup({
         theme_style = "dark",
@@ -158,6 +158,9 @@ end
       })
     end
   }
+]]--
+
+  use {'shaunsingh/oxocarbon.nvim', run = './install.sh'}
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

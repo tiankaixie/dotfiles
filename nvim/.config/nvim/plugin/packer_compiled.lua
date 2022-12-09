@@ -92,12 +92,6 @@ _G.packer_plugins = {
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/opt/coq_nvim",
     url = "https://github.com/ms-jpq/coq_nvim"
   },
-  ["github-nvim-theme"] = {
-    config = { "\27LJ\2\nÇ\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\vcolors\1\0\2\thint\vorange\nerror\f#ff0000\rsidebars\1\5\0\0\aqf\15vista_kind\rterminal\vpacker\1\0\2\19function_style\vitalic\16theme_style\tdark\nsetup\17github-theme\frequire\0" },
-    loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
-    url = "https://github.com/projekt0n/github-nvim-theme"
-  },
   ["null-ls.nvim"] = {
     config = { "\27LJ\2\nï\2\0\0\b\0\17\00086\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\15\0004\3\a\0006\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\5\4>\4\1\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\6\0049\4\5\4>\4\2\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\a\0049\4\5\4>\4\3\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\6\0049\4\b\4>\4\4\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\t\0049\4\n\0045\6\f\0005\a\v\0=\a\r\6B\4\2\2>\4\5\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\14\4>\4\6\3=\3\16\2B\0\2\1K\0\1\0\fsources\1\0\0\nisort\15extra_args\1\0\0\1\2\0\0\v--fast\twith\nblack\vflake8\17code_actions\16diagnostics\reslint_d\15formatting\rbuiltins\nsetup\fnull-ls\frequire\0" },
     loaded = true,
@@ -136,6 +130,11 @@ _G.packer_plugins = {
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  ["oxocarbon.nvim"] = {
+    loaded = true,
+    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
+    url = "https://github.com/shaunsingh/oxocarbon.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -159,10 +158,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: github-nvim-theme
-time([[Config for github-nvim-theme]], true)
-try_loadstring("\27LJ\2\nÇ\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\vcolors\1\0\2\thint\vorange\nerror\f#ff0000\rsidebars\1\5\0\0\aqf\15vista_kind\rterminal\vpacker\1\0\2\19function_style\vitalic\16theme_style\tdark\nsetup\17github-theme\frequire\0", "config", "github-nvim-theme")
-time([[Config for github-nvim-theme]], false)
 -- Config for: null-ls.nvim
 time([[Config for null-ls.nvim]], true)
 try_loadstring("\27LJ\2\nï\2\0\0\b\0\17\00086\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\15\0004\3\a\0006\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\5\4>\4\1\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\6\0049\4\5\4>\4\2\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\a\0049\4\5\4>\4\3\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\6\0049\4\b\4>\4\4\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\t\0049\4\n\0045\6\f\0005\a\v\0=\a\r\6B\4\2\2>\4\5\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\14\4>\4\6\3=\3\16\2B\0\2\1K\0\1\0\fsources\1\0\0\nisort\15extra_args\1\0\0\1\2\0\0\v--fast\twith\nblack\vflake8\17code_actions\16diagnostics\reslint_d\15formatting\rbuiltins\nsetup\fnull-ls\frequire\0", "config", "null-ls.nvim")

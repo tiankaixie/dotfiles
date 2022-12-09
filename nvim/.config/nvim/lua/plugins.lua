@@ -41,7 +41,6 @@ vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
 
 return packer.startup(function(use)
   use 'wbthomason/packer.nvim'
-  use "nvim-lua/popup.nvim"
   use "nvim-lua/plenary.nvim"
 
   -- My plugins here
@@ -49,13 +48,11 @@ return packer.startup(function(use)
     requires = {
       'nvim-tree/nvim-web-devicons'
     },
-    config = function() require('nvim-tree').setup {} end
+    config = function() require('nvim-tree').setup ({}) end
   }
 
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
-  use 'akinsho/toggleterm.nvim'
-  
   use {
     'ms-jpq/coq_nvim',
     branch = 'coq',
@@ -73,9 +70,14 @@ return packer.startup(function(use)
                 },
             }
         end
-  } 
-
+  }
   use "p00f/nvim-ts-rainbow"
+  use {
+  'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+--  use 'akinsho/toggleterm.nvim'
+  use 'voldikss/vim-floaterm'
   use {
     'jose-elias-alvarez/null-ls.nvim',
     config = function() require("null-ls").setup {

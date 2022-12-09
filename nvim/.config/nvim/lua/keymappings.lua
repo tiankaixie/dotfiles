@@ -59,7 +59,8 @@ vim.api.nvim_set_keymap('x', 'J', ':move \'>+1<CR>gv-gv\'', { noremap = true, si
 
 -- TAB complete
 -- vim.api.nvim_set_keymap('i', '<expr><TAB>', 'pumvisible() ? \"\\<C-n>\" : \"\\<TAB>\"', { noremap = true, silent = true})
-
+vim.api.nvim_set_keymap('n', '<leader>t', '<cmd>FloatermToggle<cr>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('t', '<leader>t', '<cmd>FloatermToggle<cr>', { noremap = true, silent = true})
 
 
 

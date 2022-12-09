@@ -1,11 +1,6 @@
 -- set space no operation in normal mode
 vim.api.nvim_set_keymap('n', '<Space>', '<NOP>', { noremap = true, silent = true})
 
-
--- aa
--- bb
--- cc
-
 -- map leader is set to space
 vim.g.mapleader = ' '
 
@@ -59,6 +54,9 @@ vim.api.nvim_set_keymap('x', 'J', ':move \'>+1<CR>gv-gv\'', { noremap = true, si
 
 -- TAB complete
 -- vim.api.nvim_set_keymap('i', '<expr><TAB>', 'pumvisible() ? \"\\<C-n>\" : \"\\<TAB>\"', { noremap = true, silent = true})
+
+
+-- toggle terminal
 vim.api.nvim_set_keymap('n', '<leader>\\', '<cmd>FloatermToggle<cr>', { noremap = true, silent = true})
 vim.api.nvim_set_keymap('t', '<leader>\\', '<cmd>FloatermToggle<cr>', { noremap = true, silent = true})
 

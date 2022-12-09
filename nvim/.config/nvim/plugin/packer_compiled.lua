@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/tiankaixie/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/tiankaixie/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/tiankaixie/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/tiankaixie/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/tiankaixie/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/local/ASUAD/txie21/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/local/ASUAD/txie21/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/local/ASUAD/txie21/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/local/ASUAD/txie21/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/local/ASUAD/txie21/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,12 +76,12 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["coq.artifacts"] = {
     loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/coq.artifacts",
+    path = "/home/local/ASUAD/txie21/.local/share/nvim/site/pack/packer/start/coq.artifacts",
     url = "https://github.com/ms-jpq/coq.artifacts"
   },
   ["coq.thirdparty"] = {
     loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/coq.thirdparty",
+    path = "/home/local/ASUAD/txie21/.local/share/nvim/site/pack/packer/start/coq.thirdparty",
     url = "https://github.com/ms-jpq/coq.thirdparty"
   },
   coq_nvim = {
@@ -89,87 +89,87 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = true,
     only_cond = false,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/opt/coq_nvim",
+    path = "/home/local/ASUAD/txie21/.local/share/nvim/site/pack/packer/opt/coq_nvim",
     url = "https://github.com/ms-jpq/coq_nvim"
   },
   ["null-ls.nvim"] = {
-    config = { "\27LJ\2\nï\2\0\0\b\0\17\00086\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\15\0004\3\a\0006\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\5\4>\4\1\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\6\0049\4\5\4>\4\2\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\a\0049\4\5\4>\4\3\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\6\0049\4\b\4>\4\4\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\t\0049\4\n\0045\6\f\0005\a\v\0=\a\r\6B\4\2\2>\4\5\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\14\4>\4\6\3=\3\16\2B\0\2\1K\0\1\0\fsources\1\0\0\nisort\15extra_args\1\0\0\1\2\0\0\v--fast\twith\nblack\vflake8\17code_actions\16diagnostics\reslint_d\15formatting\rbuiltins\nsetup\fnull-ls\frequire\0" },
+    config = { "\27LJ\2\2ï\2\0\0\6\0\17\00086\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\15\0004\2\a\0006\3\0\0'\4\1\0B\3\2\0029\3\3\0039\3\4\0039\3\5\3>\3\1\0026\3\0\0'\4\1\0B\3\2\0029\3\3\0039\3\6\0039\3\5\3>\3\2\0026\3\0\0'\4\1\0B\3\2\0029\3\3\0039\3\a\0039\3\5\3>\3\3\0026\3\0\0'\4\1\0B\3\2\0029\3\3\0039\3\6\0039\3\b\3>\3\4\0026\3\0\0'\4\1\0B\3\2\0029\3\3\0039\3\4\0039\3\t\0039\3\n\0035\4\f\0005\5\v\0=\5\r\4B\3\2\2>\3\5\0026\3\0\0'\4\1\0B\3\2\0029\3\3\0039\3\4\0039\3\14\3>\3\6\2=\2\16\1B\0\2\1K\0\1\0\fsources\1\0\0\nisort\15extra_args\1\0\0\1\2\0\0\v--fast\twith\nblack\vflake8\17code_actions\16diagnostics\reslint_d\15formatting\rbuiltins\nsetup\fnull-ls\frequire\0" },
     loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    path = "/home/local/ASUAD/txie21/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
     url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
+    path = "/home/local/ASUAD/txie21/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
     url = "https://github.com/williamboman/nvim-lsp-installer"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/home/local/ASUAD/txie21/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
-    config = { "\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0" },
+    config = { "\27LJ\2\2;\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0" },
     loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    path = "/home/local/ASUAD/txie21/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
-    config = { "\27LJ\2\ni\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\14highlight\1\0\0\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0" },
+    config = { "\27LJ\2\2i\0\0\3\0\6\0\t6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\1B\0\2\1K\0\1\0\14highlight\1\0\0\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0" },
     loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/home/local/ASUAD/txie21/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-ts-rainbow"] = {
     loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow",
+    path = "/home/local/ASUAD/txie21/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow",
     url = "https://github.com/p00f/nvim-ts-rainbow"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/home/local/ASUAD/txie21/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["oxocarbon.nvim"] = {
     loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
+    path = "/home/local/ASUAD/txie21/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
     url = "https://github.com/shaunsingh/oxocarbon.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/home/local/ASUAD/txie21/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/home/local/ASUAD/txie21/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/home/local/ASUAD/txie21/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-floaterm"] = {
     loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/vim-floaterm",
+    path = "/home/local/ASUAD/txie21/.local/share/nvim/site/pack/packer/start/vim-floaterm",
     url = "https://github.com/voldikss/vim-floaterm"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+try_loadstring("\27LJ\2\2i\0\0\3\0\6\0\t6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\1B\0\2\1K\0\1\0\14highlight\1\0\0\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
+time([[Config for nvim-treesitter]], false)
 -- Config for: null-ls.nvim
 time([[Config for null-ls.nvim]], true)
-try_loadstring("\27LJ\2\nï\2\0\0\b\0\17\00086\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\15\0004\3\a\0006\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\5\4>\4\1\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\6\0049\4\5\4>\4\2\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\a\0049\4\5\4>\4\3\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\6\0049\4\b\4>\4\4\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\t\0049\4\n\0045\6\f\0005\a\v\0=\a\r\6B\4\2\2>\4\5\0036\4\0\0'\6\1\0B\4\2\0029\4\3\0049\4\4\0049\4\14\4>\4\6\3=\3\16\2B\0\2\1K\0\1\0\fsources\1\0\0\nisort\15extra_args\1\0\0\1\2\0\0\v--fast\twith\nblack\vflake8\17code_actions\16diagnostics\reslint_d\15formatting\rbuiltins\nsetup\fnull-ls\frequire\0", "config", "null-ls.nvim")
+try_loadstring("\27LJ\2\2ï\2\0\0\6\0\17\00086\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\15\0004\2\a\0006\3\0\0'\4\1\0B\3\2\0029\3\3\0039\3\4\0039\3\5\3>\3\1\0026\3\0\0'\4\1\0B\3\2\0029\3\3\0039\3\6\0039\3\5\3>\3\2\0026\3\0\0'\4\1\0B\3\2\0029\3\3\0039\3\a\0039\3\5\3>\3\3\0026\3\0\0'\4\1\0B\3\2\0029\3\3\0039\3\6\0039\3\b\3>\3\4\0026\3\0\0'\4\1\0B\3\2\0029\3\3\0039\3\4\0039\3\t\0039\3\n\0035\4\f\0005\5\v\0=\5\r\4B\3\2\2>\3\5\0026\3\0\0'\4\1\0B\3\2\0029\3\3\0039\3\4\0039\3\14\3>\3\6\2=\2\16\1B\0\2\1K\0\1\0\fsources\1\0\0\nisort\15extra_args\1\0\0\1\2\0\0\v--fast\twith\nblack\vflake8\17code_actions\16diagnostics\reslint_d\15formatting\rbuiltins\nsetup\fnull-ls\frequire\0", "config", "null-ls.nvim")
 time([[Config for null-ls.nvim]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+try_loadstring("\27LJ\2\2;\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
-try_loadstring("\27LJ\2\ni\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\14highlight\1\0\0\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
-time([[Config for nvim-treesitter]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads

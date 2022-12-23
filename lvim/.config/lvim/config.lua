@@ -11,7 +11,8 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save.enabled = false
-lvim.colorscheme = "lunar"
+lvim.colorscheme = "oxocarbon"
+lvim.transparent_window = true
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 
@@ -163,6 +164,9 @@ lvim.builtin.treesitter.highlight.enable = true
 -- }
 
 -- Additional Plugins
+lvim.plugins = {
+    {"nyoom-engineering/oxocarbon.nvim"},
+}
 -- lvim.plugins = {
 --     {
 --       "folke/trouble.nvim",

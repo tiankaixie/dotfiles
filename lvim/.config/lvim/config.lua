@@ -10,11 +10,11 @@ an executable
 
 -- general
 lvim.log.level = "warn"
-lvim.format_on_save.enabled = false
+lvim.format_on_save.enabled = true
 lvim.colorscheme = "oxocarbon"
-lvim.transparent_window = true
+lvim.transparent_window = false
 -- to disable icons and use a minimalist setup, uncomment the following
--- lvim.use_icons = false
+lvim.use_icons = true
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -88,6 +88,9 @@ lvim.builtin.treesitter.ensure_installed = {
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enable = true
+
+
+lvim.builtin.lualine.style = "default"
 
 -- generic LSP settings
 
@@ -165,7 +168,7 @@ formatters.setup {
 
 -- Additional Plugins
 lvim.plugins = {
-    {"nyoom-engineering/oxocarbon.nvim"},
+  { "nyoom-engineering/oxocarbon.nvim" },
 }
 -- lvim.plugins = {
 --     {
@@ -178,7 +181,7 @@ lvim.plugins = {
 -- vim.api.nvim_create_autocmd("BufEnter", {
 --   pattern = { "*.json", "*.jsonc" },
 --   -- enable wrap mode for json files only
---   command = "setlocal wrap",
+-- command = "setlocal wrap",
 -- })
 -- vim.api.nvim_create_autocmd("FileType", {
 --   pattern = "zsh",

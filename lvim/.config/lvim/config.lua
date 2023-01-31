@@ -15,12 +15,16 @@ lvim.colorscheme = "oxocarbon"
 lvim.transparent_window = false
 -- to disable icons and use a minimalist setup, uncomment the following
 lvim.use_icons = true
+vim.opt.guifont = "monospace:h12"
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
-lvim.keys.normal_mode["<S-f>"] = ":lua vim.lsp.buf.formatting_sync()<CR>"
+-- replace escape
+lvim.keys.insert_mode["jk"] = "<ESC>"
+lvim.keys.insert_mode["kj"] = "<ESC>"
+-- lvim.keys.normal_mode["<S-f>"] = ":lua vim.lsp.buf.formatting_sync()<CR>"
 -- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 -- lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 -- unmap a default keymapping
@@ -84,6 +88,7 @@ lvim.builtin.treesitter.ensure_installed = {
   "rust",
   "java",
   "yaml",
+  "markdown"
 }
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
@@ -142,7 +147,7 @@ formatters.setup {
     command = "prettier",
     ---@usage arguments to pass to the formatter
     -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
-    extra_args = { "--print-with", "100" },
+    extra_args = { "--print-with", "80" },
     ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
     filetypes = { "typescript", "typescriptreact" },
   },

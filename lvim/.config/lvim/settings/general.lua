@@ -87,8 +87,23 @@ linters.setup {
 -- Additional Plugins
 lvim.plugins = {
   { 'Shatur/neovim-ayu' },
-  -- { 'projekt0n/github-nvim-theme', tag = 'v0.0.7' },
+  -- { 'projekt0n/github-nvim-theme' },
   -- { 'williamboman/nvim-lsp-installer' },
   -- { 'nyoom-engineering/oxocarbon.nvim' },
 }
 vim.opt.wrap = true
+
+
+-- neovide config
+if vim.fn.exists("g:neovide") then
+  vim.g.neovide_refresh_rate = 120
+  -- vim.g.neovide_scale_factor = 1.2
+  -- vim.g.neovide_transparency = 0.9
+  -- vim.g.transparency = 0.9
+  vim.g.neovide_fullscreen = true
+  vim.opt.guifont = "JetBrainsMono Nerd Font Mono:h14"
+  -- vim.g.neovide_floating_blur_amount_x = 4.0
+  -- vim.g.neovide_floating_blur_amount_y = 4.0
+  vim.g.neovide_hide_mouse_when_typing = true
+  vim.g.neovide_cursor_vfx_mode = "railgun"
+end

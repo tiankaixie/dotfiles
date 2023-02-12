@@ -2,7 +2,6 @@ lvim.format_on_save.enabled = true
 lvim.transparent_window = false
 lvim.use_icons = true
 vim.opt.guifont = "monospace:h12"
-
 lvim.leader = "space"
 
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"

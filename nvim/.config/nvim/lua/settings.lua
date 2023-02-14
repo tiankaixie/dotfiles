@@ -31,7 +31,7 @@ if vim.fn.exists("g:neovide") then
     -- vim.g.neovide_transparency = 0.9
     -- vim.g.transparency = 0.9
     vim.g.neovide_fullscreen = true
-    vim.opt.guifont = "JetBrainsMono Nerd Font Mono:h14"
+    vim.opt.guifont = "JetBrainsMono Nerd Font Mono:h12"
     -- vim.g.neovide_floating_blur_amount_x = 4.0
     -- vim.g.neovide_floating_blur_amount_y = 4.0
     vim.g.neovide_hide_mouse_when_typing = true

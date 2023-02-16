@@ -1,3 +1,17 @@
+-- neovide config
+if vim.fn.exists("g:neovide") then
+  vim.g.neovide_refresh_rate = 120
+  -- vim.g.neovide_scale_factor = 1.2
+  -- vim.g.neovide_transparency = 0.9
+  -- vim.g.transparency = 0.9
+  vim.g.neovide_fullscreen = true
+  vim.opt.guifont = "JetBrainsMono Nerd Font Mono:h14"
+  -- vim.g.neovide_floating_blur_amount_x = 4.0
+  -- vim.g.neovide_floating_blur_amount_y = 4.0
+  vim.g.neovide_hide_mouse_when_typing = true
+  vim.g.neovide_cursor_vfx_mode = "railgun"
+end
+
 lvim.format_on_save.enabled = true
 lvim.transparent_window = false
 lvim.use_icons = true
@@ -11,12 +25,12 @@ lvim.keys.insert_mode["jk"] = "<ESC>"
 lvim.keys.insert_mode["kj"] = "<ESC>"
 lvim.keys.normal_mode['<leader>j'] = ":Telescope live_grep<cr>"
 
-
+lvim.colorscheme = 'oxocarbon'
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
-lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
+lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
 
 lvim.builtin.lualine.style = "lvim"
 -- if you don't want all the parsers change this to a table of the ones you want
@@ -41,6 +55,10 @@ lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enable = true
 
 
+lvim.plugins = {
+  { "nyoom-engineering/oxocarbon.nvim" },
+  { "lunarvim/horizon.nvim" }
+}
 
 -- generic LSP settings
 
@@ -82,27 +100,3 @@ linters.setup {
     filetypes = { "javascript", "python" },
   },
 }
-
--- Additional Plugins
-lvim.plugins = {
-  { 'Shatur/neovim-ayu' },
-  -- { 'projekt0n/github-nvim-theme' },
-  -- { 'williamboman/nvim-lsp-installer' },
-  -- { 'nyoom-engineering/oxocarbon.nvim' },
-}
-vim.opt.wrap = true
-
-
--- neovide config
-if vim.fn.exists("g:neovide") then
-  vim.g.neovide_refresh_rate = 120
-  -- vim.g.neovide_scale_factor = 1.2
-  -- vim.g.neovide_transparency = 0.9
-  -- vim.g.transparency = 0.9
-  vim.g.neovide_fullscreen = true
-  vim.opt.guifont = "JetBrainsMono Nerd Font Mono:h14"
-  -- vim.g.neovide_floating_blur_amount_x = 4.0
-  -- vim.g.neovide_floating_blur_amount_y = 4.0
-  vim.g.neovide_hide_mouse_when_typing = true
-  vim.g.neovide_cursor_vfx_mode = "railgun"
-end

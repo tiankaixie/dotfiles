@@ -73,7 +73,8 @@ font:
     x: 0
     y: 0
 window:
-  opacity: 0.8
+  decorations: full
+  opacity: 0.9
   padding:
     x: 2
     y: 2
@@ -101,3 +102,7 @@ key_bindings:
   # - { key: Subtract, mods: Control, action: DecreaseFontSize }
   - { key: Minus, mods: Control, action: DecreaseFontSize }
   # - { key: N, mods: Control, action: SpawnNewInstance }
+
+cursor:
+  style: Beam
+

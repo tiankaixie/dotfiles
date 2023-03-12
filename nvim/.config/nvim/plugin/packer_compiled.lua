@@ -119,11 +119,6 @@ _G.packer_plugins = {
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["darkplus.nvim"] = {
-    loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
-    url = "https://github.com/lunarvim/darkplus.nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -179,6 +174,11 @@ _G.packer_plugins = {
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-transparent"] = {
+    loaded = true,
+    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/nvim-transparent",
+    url = "https://github.com/xiyaowong/nvim-transparent"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
@@ -198,6 +198,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
+  ["oxocarbon.nvim"] = {
+    loaded = true,
+    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
+    url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -223,11 +228,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
-  },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-bbye"] = {
     loaded = true,

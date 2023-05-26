@@ -1,7 +1,7 @@
 colors:
   primary:
     # background: '#282a36'
-    background: '#001822'
+    background: '#000e13'
     foreground: '#839496'
     bright_foreground: '#ffffff'
   cursor:
@@ -49,7 +49,8 @@ colors:
     yellow: '#657b83'
     blue: '#839496'
     magenta: '#6c71c4'
-    cyan: '#93a1a1'
+    #cyan: '#93a1a1'
+    cyan: '#2aa198'
     white: '#fdf6e3'
 
 
@@ -75,7 +76,7 @@ font:
     x: 0
     y: 0
 window:
-  opacity: 0.8
+  opacity: 0.9
   padding:
     x: 2
     y: 2

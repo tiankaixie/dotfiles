@@ -17,7 +17,8 @@ alias lla "ll -A"
 alias g git
 alias c-home "ssh coufi@192.168.0.146"
 alias c-lab "ssh txie21@10.218.105.51"
-command -qv nvim && alias vim nvim
+alias nvim "~/Softwares/squashfs-root/usr/bin/nvim"
+# command -qv nvim && alias vim nvim
 
 set -gx EDITOR nvim
 

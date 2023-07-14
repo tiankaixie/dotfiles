@@ -11,6 +11,9 @@ local fb_actions = require "telescope".extensions.file_browser.actions
 
 telescope.setup {
   defaults = {
+    file_ignore_patterns = {
+      "node_modules", "build", "dist", "yarn.lock"
+    },
     mappings = {
       n = {
         ["q"] = actions.close
@@ -44,10 +47,11 @@ telescope.load_extension("file_browser")
 
 vim.keymap.set('n', ';f',
   function()
-    builtin.find_files({
-      no_ignore = false,
-      hidden = true
-    })
+    builtin.find_files(
+      {
+        cwd = vim.fn.systemlist("git rev-parse --show-toplevel")[1]
+      }
+    )
   end)
 vim.keymap.set('n', ';r', function()
   builtin.live_grep()

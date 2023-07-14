@@ -55,3 +55,9 @@ set LOCAL_CONFIG (dirname (status --current-filename))/config-local.fish
 if test -f $LOCAL_CONFIG
   source $LOCAL_CONFIG
 end
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+eval /Users/tiankaixie/miniforge3/bin/conda "shell.fish" "hook" $argv | source
+# <<< conda initialize <<<
+

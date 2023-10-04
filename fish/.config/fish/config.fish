@@ -61,3 +61,7 @@ end
 eval /Users/tiankaixie/miniforge3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
 
+# >>> startship init >>>
+starship init fish | source
+# <<< startship init <<<
+

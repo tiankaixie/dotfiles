@@ -94,20 +94,15 @@ _G.packer_plugins = {
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["colorbuddy.nvim"] = {
-    loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
-    url = "https://github.com/tjdevries/colorbuddy.nvim"
-  },
   ["copilot.vim"] = {
     loaded = true,
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
-  ["git.nvim"] = {
+  ["fui.nvim"] = {
     loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/git.nvim",
-    url = "https://github.com/dinhhuy258/git.nvim"
+    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/fui.nvim",
+    url = "https://github.com/tiankaixie/fui.nvim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -127,12 +122,12 @@ _G.packer_plugins = {
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/nvim-lualine/lualine.nvim"
+    url = "https://github.com/tiankaixie/lualine.nvim"
   },
-  ["markdown-preview.nvim"] = {
+  ["lush.nvim"] = {
     loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
-    url = "https://github.com/iamcco/markdown-preview.nvim"
+    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -143,11 +138,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["neosolarized.nvim"] = {
-    loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/neosolarized.nvim",
-    url = "https://github.com/svrana/neosolarized.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -218,11 +208,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["zen-mode.nvim"] = {
-    loaded = true,
-    path = "/Users/tiankaixie/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
-    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 

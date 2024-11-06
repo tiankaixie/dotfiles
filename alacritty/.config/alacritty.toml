@@ -6,12 +6,12 @@
 opacity = 0.95
 
 
-decorations = "Transparent"
+decorations = "Buttonless"
 decorations_theme_variant = "Dark" # "Dark"
 blur = true
 dynamic_padding = true
 
-startup_mode = "SimpleFullscreen"
+# startup_mode = "Windowed"
 
 [font]
 
@@ -30,3 +30,10 @@ size = 15.0
 
 primary.background = "#0E1516"
 primary.foreground = "#869395"
+
+
+[mouse]
+hide_when_typing = true
+
+[selection]
+save_to_clipboard = true

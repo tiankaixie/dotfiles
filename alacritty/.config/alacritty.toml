@@ -28,7 +28,8 @@ size = 15.0
 
 [colors]
 
-primary.background = "#0E1516"
+# primary.background = "#0E1516"
+primary.background = "#192528"
 primary.foreground = "#869395"
 
 

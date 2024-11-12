@@ -1,14 +1,22 @@
+
 return {
-  "craftsdog/solarized-osaka.nvim",
-  lazy = true,
-  priority = 1000,
-  opts = function()
-    return {
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
+  {
+    "EdenEast/nightfox.nvim",
+    opts = {
+      options = {
+        styles = {
+          comments = "italic",
+          keywords = "bold",
+          types = "italic,bold",
+          variables = "bold"
+        }
+      }
     }
-  end,
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "terafox"  -- or any other style: dayfox, dawnfox, duskfox, nordfox, terafox, carbonfox
+    }
+  }
 }

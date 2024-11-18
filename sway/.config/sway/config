@@ -228,3 +228,5 @@ client.unfocused        #192629 #192629 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 
 include /etc/sway/config.d/*
+
+bindsym Control+Shift+l exec swaylock -f -c 000000

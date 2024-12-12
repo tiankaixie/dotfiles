@@ -3,13 +3,13 @@
 
 [window]
 
-opacity = 0.95
+# opacity = 0.95
 
 
-decorations = "Buttonless"
+# decorations = "Buttonless"
 decorations_theme_variant = "Dark" # "Dark"
-blur = true
-dynamic_padding = true
+# blur = true
+# dynamic_padding = true
 
 # startup_mode = "Windowed"
 

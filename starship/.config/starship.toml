@@ -2,6 +2,11 @@
 # "$schema" = 'https://starship.rs/config-schema.json'
 
 
+# Limit how long Starship scans for context to keep prompt snappy in big repos
+scan_timeout = 50
+
+format = "$all"
+
 # Inserts a blank line between shell prompts
 #add_newline = true
 
@@ -26,6 +31,13 @@ symbol = " "
 
 [directory]
 read_only = " "
+truncation_length = 3
+truncate_to_repo = true
+
+[git_status]
+# Keep minimal status indicators
+disabled = false
+format = "([$all_status$ahead_behind]($style) )"
 
 [docker_context]
 symbol = " "

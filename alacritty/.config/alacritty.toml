@@ -3,12 +3,11 @@
 
 [window]
 
-# opacity = 0.95
-
+opacity = 0.85
 
 # decorations = "Buttonless"
 decorations_theme_variant = "Dark" # "Dark"
-# blur = true
+blur = true
 # dynamic_padding = true
 
 # startup_mode = "Windowed"
@@ -21,17 +20,6 @@ italic.family = "BerkeleyMono Nerd Font Mono Plus Font Awesome Plus Font Awesome
 bold_italic.family = "BerkeleyMono Nerd Font Mono Plus Font Awesome Plus Font Awesome Extension Plus Octicons Plus Power Symbols Plus Codicons Plus Pomicons Plus Font Logos Plus Material Design Icons Plus Weather Icons"
 
 size = 15.0
-
-# Tip: for inspiration, look for values in the source code files of your favorite VS Code themes, and use the color picker in
-# Google to test colors before setting a value, or simply using an editor such as VS Code where colors are displayed in a 
-# small box when a HEX is detected by the editor.
-
-[colors]
-
-# primary.background = "#0E1516"
-primary.background = "#192528"
-primary.foreground = "#869395"
-
 
 [mouse]
 hide_when_typing = true

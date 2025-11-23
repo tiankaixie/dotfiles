@@ -8,7 +8,6 @@ $directory\
 $git_branch\
 [](fg:#586e75)\
 $git_status\
-$git_metrics\
 $character\
 """
 
@@ -23,7 +22,6 @@ style = "fg:#eee8d5 bg:#586e75"
 
 [git_status]
 format = "[ $all_status ]($style)"
-style = "fg:#93a1a1"
 
 # [git_metrics]
 # format = "[ +$added ]($added_style)[ -$deleted ]($deleted_style)"

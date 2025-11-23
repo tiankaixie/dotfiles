@@ -1,106 +1,50 @@
-# Get editor completions based on the config schema
-# "$schema" = 'https://starship.rs/config-schema.json'
-
-
-# Limit how long Starship scans for context to keep prompt snappy in big repos
-scan_timeout = 50
-
-format = "$all"
-
-# Inserts a blank line between shell prompts
-#add_newline = true
-
-# Replace the "❯" symbol in the prompt with "➜"
-[character] # The name of the module we are configuring is "character"
-success_symbol = "[➜](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
-
-[aws]
-symbol = "  "
-
-[buf]
-symbol = " "
-
-[c]
-symbol = " "
-
-[conda]
-symbol = " "
-
-[dart]
-symbol = " "
+format = """\
+[ 󰀵 ](fg:#073642 bg:#eee8d5 bold)\
+[](fg:#eee8d5 bg:#93a1a1)\
+$time\
+[](fg:#93a1a1 bg:#002b36)\
+$directory\
+[](fg:#002b36 bg:#586e75)\
+$git_branch\
+[](fg:#586e75)\
+$git_status\
+$git_metrics\
+$character\
+"""
 
 [directory]
-read_only = " "
-truncation_length = 3
-truncate_to_repo = true
-
-[git_status]
-# Keep minimal status indicators
-disabled = false
-format = "([$all_status$ahead_behind]($style) )"
-
-[docker_context]
-symbol = " "
-
-[elixir]
-symbol = " "
-
-[elm]
-symbol = " "
+format = "[ ﱮ $path ]($style)"
+style = "fg:#93a1a1 bg:#002b36"
 
 [git_branch]
-symbol = " "
+format = '[ $symbol$branch(:$remote_branch) ]($style)'
+symbol = "  "
+style = "fg:#eee8d5 bg:#586e75"
 
-[golang]
-symbol = " "
+[git_status]
+format = "[ $all_status ]($style)"
+style = "fg:#93a1a1"
 
-[haskell]
-symbol = " "
+[git_metrics]
+format = "[ +$added ]($added_style)[ -$deleted ]($deleted_style)"
+added_style = "fg:#b58900"
+deleted_style = "fg:#dc322f"
+disabled = false
 
 [hg_branch]
+format = "[ $symbol$branch ]($style)"
 symbol = " "
 
-[java]
-symbol = " "
+[cmd_duration]
+format = "[  $duration ]($style)"
+style = "fg:#93a1a1 bg:#002b36"
 
-[julia]
-symbol = " "
+[character]
+success_symbol = "[ ➜ ](fg:#93a1a1 bold) "
+error_symbol = "[ ✗ ](fg:#dc322f bold) "
 
-[lua]
-symbol = " "
-
-[memory_usage]
-symbol = " "
-
-[meson]
-symbol = "喝 "
-
-[nim]
-symbol = " "
-
-[nix_shell]
-symbol = " "
-
-[nodejs]
-symbol = " "
-
-[package]
-symbol = " "
-
-[python]
-symbol = " "
-
-[rlang]
-symbol = "ﳒ "
-
-[ruby]
-symbol = " "
-
-[rust]
-symbol = " "
-
-[scala]
-symbol = " "
-
-[spack]
-symbol = "🅢 "
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "fg:#15161e bg:#93a1a1"
+format = "[ 󱑍 $time ]($style)"

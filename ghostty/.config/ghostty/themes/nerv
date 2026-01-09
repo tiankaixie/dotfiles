@@ -3,7 +3,7 @@
 
 # ANSI Colors (0-15)
 # Black
-palette = 0=#0a1612
+palette = 0=#0f1f1a
 palette = 8=#4a6a5d
 
 # Red
@@ -43,5 +43,5 @@ cursor-color = #e85d04
 cursor-text = #0a1612
 
 # Selection
-selection-background = #e85d0450
+selection-background = #2a1a0f
 selection-foreground = #a8d3c5

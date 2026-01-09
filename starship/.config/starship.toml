@@ -1,48 +1,87 @@
+# NERV Theme for Starship
+# Inspired by 80s/90s cyberpunk interfaces and Evangelion's NERV headquarters
+
 format = """\
-[ 󰀵  ](fg:#073642 bg:#eee8d5 bold)\
-[](fg:#eee8d5 bg:#93a1a1)\
+[ 󰀵  ](fg:#0a1612 bg:#e85d04 bold)\
+[](fg:#e85d04 bg:#8fb3a5)\
 $time\
-[](fg:#93a1a1 bg:#002b36)\
+[](fg:#8fb3a5 bg:#0f1f1a)\
 $directory\
-[](fg:#002b36 bg:#586e75)\
+[](fg:#0f1f1a bg:#3a7a8c)\
 $git_branch\
-[](fg:#586e75)\
+[](fg:#3a7a8c)\
 $git_status\
 $character\
 """
 
 [directory]
 format = "[ $path ]($style)"
-style = "fg:#93a1a1 bg:#002b36"
+style = "fg:#a8d3c5 bg:#0f1f1a"
+truncation_length = 3
+truncate_to_repo = true
 
 [git_branch]
 format = '[ $symbol$branch(:$remote_branch) ]($style)'
-symbol = "  "
-style = "fg:#eee8d5 bg:#586e75"
+symbol = "  "
+style = "fg:#a8d3c5 bg:#3a7a8c"
 
 [git_status]
-format = "[ $all_status ]($style)"
+format = "[ $all_status$ahead_behind ]($style)"
+style = "fg:#e85d04 bold"
+conflicted = "⚔️ "
+ahead = "⇡${count} "
+behind = "⇣${count} "
+diverged = "⇕⇡${ahead_count}⇣${behind_count} "
+up_to_date = ""
+untracked = "?${count} "
+stashed = "📦 "
+modified = "!${count} "
+staged = "+${count} "
+renamed = "»${count} "
+deleted = "✘${count} "
 
-# [git_metrics]
-# format = "[ +$added ]($added_style)[ -$deleted ]($deleted_style)"
-# added_style = "fg:#b58900"
-# deleted_style = "fg:#dc322f"
-# disabled = false
+[git_metrics]
+format = "[ +$added ]($added_style)[ -$deleted ]($deleted_style)"
+added_style = "fg:#4a8c5c bold"
+deleted_style = "fg:#c92a2a bold"
+disabled = false
 
 [hg_branch]
 format = "[ $symbol$branch ]($style)"
-symbol = " "
+symbol = " "
+style = "fg:#a8d3c5 bg:#3a7a8c"
 
 [cmd_duration]
-format = "[  $duration ]($style)"
-style = "fg:#93a1a1 bg:#002b36"
+format = "[  $duration ]($style)"
+style = "fg:#8fb3a5 bg:#0f1f1a"
+min_time = 500
 
 [character]
-success_symbol = "[➜](fg:#93a1a1 bold) "
-error_symbol = "[✗](fg:#dc322f bold) "
+success_symbol = "[➜](fg:#4a8c5c bold) "
+error_symbol = "[✗](fg:#c92a2a bold) "
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "fg:#15161e bg:#93a1a1"
+style = "fg:#0a1612 bg:#8fb3a5 bold"
 format = "[ 󱑍 $time ]($style)"
+
+[python]
+format = '[ ${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+style = "fg:#0a1612 bg:#d4a017"
+symbol = "🐍 "
+
+[nodejs]
+format = '[ ${symbol}(${version} )]($style)'
+style = "fg:#0a1612 bg:#4a8c5c"
+symbol = " "
+
+[rust]
+format = '[ ${symbol}(${version} )]($style)'
+style = "fg:#0a1612 bg:#e85d04"
+symbol = "🦀 "
+
+[docker_context]
+format = '[ ${symbol}${context} ]($style)'
+style = "fg:#0a1612 bg:#3a7a8c"
+symbol = "🐋 "

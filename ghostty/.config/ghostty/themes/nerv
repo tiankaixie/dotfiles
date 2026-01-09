@@ -1,0 +1,47 @@
+# NERV Theme for Ghostty
+# Inspired by 80s/90s cyberpunk interfaces and Evangelion's NERV headquarters
+
+# ANSI Colors (0-15)
+# Black
+palette = 0=#0a1612
+palette = 8=#4a6a5d
+
+# Red
+palette = 1=#c92a2a
+palette = 9=#dc3545
+
+# Green
+palette = 2=#4a8c5c
+palette = 10=#5aac6c
+
+# Yellow/Gold
+palette = 3=#d4a017
+palette = 11=#e4b027
+
+# Blue/Teal
+palette = 4=#3a7a8c
+palette = 12=#4a8a9c
+
+# Magenta/Purple
+palette = 5=#8a5a8a
+palette = 13=#9a6a9a
+
+# Cyan
+palette = 6=#5a9a8c
+palette = 14=#6aaa9c
+
+# White/Foreground shades
+palette = 7=#8fb3a5
+palette = 15=#a8d3c5
+
+# Core colors
+background = #0a1612
+foreground = #8fb3a5
+
+# Cursor
+cursor-color = #e85d04
+cursor-text = #0a1612
+
+# Selection
+selection-background = #e85d0450
+selection-foreground = #a8d3c5

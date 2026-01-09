@@ -1,0 +1,30 @@
+# Ghostty Configuration - NERV Theme
+# https://ghostty.org/docs
+
+# Font settings
+font-family = Berkeley Mono
+font-family-bold = Berkeley Mono
+font-family-italic = Berkeley Mono
+font-family-bold-italic = Berkeley Mono
+
+# Theme
+theme = nerv
+
+# Background effects - cyberpunk aesthetic
+background-opacity = 0.92
+background-blur-radius = 20
+
+# Shell
+command = /bin/zsh
+
+# Behavior
+click-repeat-interval = 500
+auto-update-channel = stable
+
+# Window settings
+window-padding-x = 8
+window-padding-y = 8
+
+# Cursor
+cursor-style = block
+cursor-style-blink = true
